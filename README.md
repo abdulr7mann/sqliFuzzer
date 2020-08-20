@@ -3,7 +3,8 @@
 # sqliFuzzer
 A simple bash tool to brute force parameters with supplied payload list, looking for SQLi. It urlencodes payloads as well. YAY!
 ```bash
-./sqlfuzzing.sh url sqliPayloadList.txt
-./sqlfuzzing.sh http://leettime.net/sqlninja.com/tasks/basic_ch1.php?id=1 ~/Desktop/sqlList.txt
+Usage:
+./sqliFuzzer.sh URL payload.txt
+./sqlfuzzer.sh http://leettime.net/sqlninja.com/tasks/basic_ch1.php?id=1 /usr/share/wfuzz/wordlist/Injections/SQL.txt
 ```
 ![](https://cdn.discordapp.com/attachments/612602508808028170/745761319180828703/unknown.png)
