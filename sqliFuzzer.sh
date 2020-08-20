@@ -31,7 +31,12 @@ urlEncode() {
 		then
 			char="${payload}"
 			encode="%22"
-			payload="${char/\'/$encode}"
+			payload="${char/\"/$encode}"
+		elif [[ "${i}" = ' ' ]]
+		then
+			char="${payload}"
+			encode="%20"
+			payload="${char/ /$encode}"
 		fi
 	done <<< "${payload}"
 }
