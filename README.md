@@ -8,4 +8,4 @@ Usage:
 ./sqlfuzzer.sh http://leettime.net/sqlninja.com/tasks/basic_ch1.php?id=1 /usr/share/wfuzz/wordlist/Injections/SQL.txt
 ```
 ![](https://cdn.discordapp.com/attachments/612602508808028170/745761319180828703/unknown.png)
-https://cdn.discordapp.com/attachments/754133070986084393/755162044206022786/Kyle_B3nac_-_Edited-2.pdf
+
